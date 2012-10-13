@@ -1,0 +1,202 @@
+/* reset bootstrap */
+.btn {
+	border-radius: 0;
+	font-family: "微软雅黑";
+	margin-left: 10px;
+}
+.hidden {
+	display: none;
+}
+.h-alert {
+	width: 940px;
+	margin: 0 auto 20px auto;
+}
+label, input {
+	font-family: "微软雅黑";
+}
+body {
+	/*padding-top: 90px;*/
+    padding-bottom: 40px;
+    height: 100%;
+}
+
+/* overlaying */
+.overlay {
+	display: none;
+}
+.overlaying {
+	/*overflow: hidden;*/
+}
+.overlaying .overlay {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: gray;
+	z-index: 1000;
+	opacity: 0.8;	
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/* 导航菜单 */
+.navbar-happy .navbar-inner {
+	height: 80px;
+	background: #4A8CF7;
+	border-radius: 0;
+}
+.navbar-happy .container {
+	width: 940px;
+}
+.navbar-happy .brand {
+	color: white;
+	text-shadow: none;
+	font-weight: 900;
+	line-height: 60px;
+}
+.navbar-happy .nav {
+	margin-top: 40px;
+}
+.navbar-happy .nav > li > a {
+	text-shadow: none;
+}
+.navbar-happy .nav > .active > a, .navbar-happy .nav > .active > a:hover, .navbar-happy .nav > .active > a:focus {
+	color: white;
+	background: transparent;
+}
+.navbar-happy .nav > li > a:focus, .navbar-happy .nav > li > a:hover {
+	color: black;
+}
+.navbar-happy .nav > li > a {
+	color: white;
+}
+
+.navbar-happy .pull-right {
+	margin-top: 10px;
+}
+.navbar-happy .pull-right .btn {
+	margin-left: 10px;
+}
+
+/* 登陆框 */
+@-webkit-keyframes slide-up {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -440px;
+    }
+}
+@-webkit-keyframes slide-down {
+    0% {
+        top: -440px;
+    }
+    100% {
+        top: 0;
+    }
+}
+.navbar-happy .login-dialog, .navbar-happy .register-dialog {
+	z-index: 1000;
+	position: absolute;
+	width: 940px;
+	margin: 0 auto;
+	top: 0;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+}
+.navbar-happy .login-dialog.slide-down, .navbar-happy .register-dialog.slide-down {
+	-webkit-animation-name: slide-down;
+}
+.navbar-happy .login-dialog.slide-up, .navbar-happy .register-dialog.slide-up {
+	-webkit-animation-name: slide-up;
+}
+.login-dialog .well, .register-dialog .well {
+	border-radius: 0;
+	width: 440px;
+	/*float: right;*/
+	margin: 60px auto;
+}
+
+.form-search {
+	width: 100%;
+	text-align: right;
+}
+.form-search .input-large {
+	border-radius: 0;
+	width: 240px;
+	padding-left: 5px;
+}
+
+/* 下面开始路线编辑器 */
+.ground {
+	width: 940px;
+	margin: 0 auto;
+	height: 520px;
+	background: #EEE;
+}
+.ground.dragenter {
+	background: #ddd;
+}
+.gallery {
+	height: 100px;
+	background: lightgray;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.gallery .photo {
+	height: 100px;
+	margin-right: 10px;
+	float: left;
+}
+.gallery .photo:last-child {
+	clear: right;
+}
+.gallery .photo img {
+	height: 100px;
+}
+.photo-wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*width: 1000%;*/
+}
+.gallery div[class^=scroll] {
+	background: gray;
+	height: 100px;
+	opacity: 0.2;
+	cursor: pointer;
+}
+.gallery div[class^=scroll]:hover {
+	opacity: 0.9;
+}
+.gallery div[class^=scroll] span {
+	font-size: 76px;
+	line-height: 100px;
+	font-weight: 900;
+	opacity: 1.0;
+}
+.gallery .scroll-left {
+	float: left;
+}
+.gallery .scroll-right {
+	float: right;
+}
+
+.placemenu {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.placemenu ul {
+	list-style: none inside;
+	margin: 0;
+}
+.placemenu ul li {
+	display: inline-block;
+	background: #4A8CF7;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	padding: 0 5px;
+}
