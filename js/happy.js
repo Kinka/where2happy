@@ -567,7 +567,7 @@ Connection = (function(){
 			_arrow = arrow;
 
 		_curve.click(del);
-		_arrow.click(del);
+		// _arrow.click(del);
 
 		function del() {
 			var that = this==_image1 ? _image2:_image1,
